@@ -1,0 +1,31 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
+2 info using npm@2.11.3
+3 info using node@v5.8.0
+4 info preversion orient-express@0.1.2
+5 info git [ 'status', '--porcelain' ]
+6 verbose stack Error: Error: Git working directory not clean.
+6 verbose stack M package.json
+6 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:71:23
+6 verbose stack     at /usr/local/lib/node_modules/npm/lib/version.js:151:34
+6 verbose stack     at ChildProcess.exithandler (child_process.js:193:7)
+6 verbose stack     at emitTwo (events.js:100:13)
+6 verbose stack     at ChildProcess.emit (events.js:185:7)
+6 verbose stack     at maybeClose (internal/child_process.js:850:16)
+6 verbose stack     at Socket.<anonymous> (internal/child_process.js:323:11)
+6 verbose stack     at emitOne (events.js:90:13)
+6 verbose stack     at Socket.emit (events.js:182:7)
+6 verbose stack     at Pipe._onclose (net.js:475:12)
+7 verbose cwd /home/paul/github/orient-express
+8 error Linux 3.13.0-24-generic
+9 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "version" "patch"
+10 error node v5.8.0
+11 error npm  v2.11.3
+12 error Error: Git working directory not clean.
+12 error M package.json
+13 error If you need help, you may report this error at:
+13 error     <https://github.com/npm/npm/issues>
+14 verbose exit [ 1, true ]
