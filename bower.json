@@ -1,7 +1,7 @@
 {
   "name": "orient-express",
   "description": "Javascript page orientation library.  Its name is a terrible pun.",
-  "main": "orientexpress.js",
+  "main": "dist/orientexpress.js",
   "authors": [
     "Paul Horner <paulhorner79@gmail.com>"
   ],
