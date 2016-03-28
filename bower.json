@@ -1,0 +1,23 @@
+{
+  "name": "orient-express",
+  "description": "Javascript page orientation library.  It's name is a terrible pun.",
+  "main": "orientexpress.js",
+  "authors": [
+    "Paul Horner <paulhorner79@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "orientation",
+    "landscape",
+    "portrait"
+  ],
+  "homepage": "https://github.com/paulhorner79/orient-express",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
