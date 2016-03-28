@@ -1,6 +1,6 @@
 {
-    "name": "yogi-bearings",
-    "title": "Yogi Bearings",
+    "name": "orient-express",
+    "title": "Orient Express",
     "version": "0.0.1",
     "description": "Javascript page orientation library.  It's name is a terrible pun.",
     "keywords": [
@@ -9,7 +9,7 @@
     "author": "Paul Horner <paulhorner79@gmail.com>","license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git://github.com/pahulhorner79/yogi-bearings.git"
+        "url": "git://github.com/pahulhorner79/orient-express.git"
     },
     "devDependencies": {
         "gulp": "^3.8",
@@ -18,10 +18,7 @@
         "gulp-watch": "~4.3",
         "gulp-rename": "~1.2",
         "gulp-concat": "~2.6",
-        "gulp-mocha": "^2.2",
-        "jsdom": "^8.1",
-        "mocha-jsdom": "^1.1",
-        "chai": "^3.5"
+        "qunitjs": "^1.23"
     },
     "main": "gulpfile.js"
 }

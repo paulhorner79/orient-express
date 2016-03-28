@@ -1,32 +1,39 @@
-# Yogi Bearings
+# Orient Express
 
-> It's smarter than the average bear(ings)
-
-Load this and it will help you get your bearings by telling you if the page is
-Landscape, Portrait, or Square.
+Load this and it will quickly tell you the orientation of your page.  It will
+let you know if it's Landscape, Portrait, or Square.
 
 I know that there are other libraries out there that do this, and probably do
-it just as well or maybe even better.  But how many of those are named after a
-cartoon bear?
+it just as well or maybe even better.
 
 ## Quickstart
 
-You basically need to include the `/dist/yogi.min.js` file on your page and it
-will create an object called `yogi`.  This object contains the following
-properties:
+You basically need to include the `/dist/orientexpress.min.js` file on your
+page, and then invoke a new OrientExpress object.
 
-- `yogi.width`       - the width of the window
-- `yogi.height`      - the height of the window
-- `yogi.landscape`   - returns `true` if it's landscape, `false` if it isn't *
-- `yogi.portrait`    - returns `true` if it's portrait, `false` if it isn't *
-- `yogi.orientation` - returns `landscape`, `portrait`, or `square`.
+```javascript
+var ox = new OrientExpress();
+```
 
-**Please note - `yogi.landscape` and `yogi.portrait` will return `false` if
-the page is square.*
+This object contains the following properties:
 
-The orientation values will be updated automatically when the page is loaded,
-and whenever the window size changes.  You don't need to do anything else to
-the page.
+- `.width`       - the width of the window
+- `.height`      - the height of the window
+- `.landscape`   - returns `true` if it's landscape, `false` if it isn't *
+- `.portrait`    - returns `true` if it's portrait, `false` if it isn't *
+- `.orientation` - returns `landscape`, `portrait`, or `square`.
+
+**Please note - `.landscape` and `.portrait` will return `false` if the page is square.*
+
+## Options
+
+By default, the orientation values will be updated automatically when the page
+is loaded and whenever the window size changes.  If you don't want it to
+refresh when the page is resized, pass `false` when invoking the new object.
+
+```javascript
+var ox = new OrientExpress(false);
+```
 
 ## API
 
@@ -34,8 +41,9 @@ While not strictly necessary, the library also contains some API methods.
 
 These can be called using the following:
 
-```
-var orientation = yogi.getOrientation();
+```javascript
+var ox = new OrientExpress();
+var orientation = ox.getOrientation();
 ```
 
 ### `.getOrientation();`
@@ -49,3 +57,22 @@ Returns `true` if it's landscape, `false` if it isn't.
 ### `.isPortrait();`
 
 Returns `true` if it's portrait, `false` if it isn't.
+
+## Tests
+
+This uses QUnit for testing.  The tests can be checked by running
+`./test/index.html`.  These are not currently tested during the build process
+as the browser resize testing requires further input to work with the Phantom
+library.
+
+## About
+
+I built this module because I've copied and pasted the same code into three or
+four projects and thought it would make sense to have a single, usable library
+that I could just import when I needed it.
+
+Originally I was going to call this **"Yogi Bearings"**, but I realised that
+would cause confusion because while "bearings" is a synonym of "orientation",
+it doesn't *really* mean the same thing.  And there are already npm modules
+called "yogi", so there could be some confusion there too. (There are also some
+modules called both "orient" and "express", but I think this is OK).
