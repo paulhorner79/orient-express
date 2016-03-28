@@ -1,24 +1,25 @@
 {
-    "name": "orient-express",
-    "title": "Orient Express",
-    "version": "0.0.1",
-    "description": "Javascript page orientation library.  It's name is a terrible pun.",
-    "keywords": [
-        "pagination"
-    ],
-    "author": "Paul Horner <paulhorner79@gmail.com>","license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/pahulhorner79/orient-express.git"
-    },
-    "devDependencies": {
-        "gulp": "^3.8",
-        "gulp-jshint": "~1",
-        "gulp-uglify": "~1",
-        "gulp-watch": "~4.3",
-        "gulp-rename": "~1.2",
-        "gulp-concat": "~2.6",
-        "qunitjs": "^1.23"
-    },
-    "main": "gulpfile.js"
+  "name": "orient-express",
+  "title": "Orient Express",
+  "version": "0.1.0",
+  "description": "Javascript page orientation library.  It's name is a terrible pun.",
+  "keywords": [
+    "pagination"
+  ],
+  "author": "Paul Horner <paulhorner79@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pahulhorner79/orient-express.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.8",
+    "gulp-jshint": "~1",
+    "gulp-uglify": "~1",
+    "gulp-watch": "~4.3",
+    "gulp-rename": "~1.2",
+    "gulp-concat": "~2.6",
+    "qunitjs": "^1.23"
+  },
+  "main": "gulpfile.js"
 }
