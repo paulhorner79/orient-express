@@ -1,6 +1,6 @@
 {
   "name": "orient-express",
-  "description": "Javascript page orientation library.  It's name is a terrible pun.",
+  "description": "Javascript page orientation library.  Its name is a terrible pun.",
   "main": "orientexpress.js",
   "authors": [
     "Paul Horner <paulhorner79@gmail.com>"
