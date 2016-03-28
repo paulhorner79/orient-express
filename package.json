@@ -1,7 +1,7 @@
 {
   "name": "orient-express",
   "title": "Orient Express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Javascript page orientation library.  It's name is a terrible pun.",
   "keywords": [
     "pagination"
